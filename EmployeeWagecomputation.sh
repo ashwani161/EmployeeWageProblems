@@ -35,3 +35,16 @@ else
     empHrs=0;
 fi
 salary=$(($empHrs*$empRatePerHr));
+
+case $empCheck in
+      $isFullTime)
+           empHrs=8
+             ;;
+      $isPartTime)
+           empHrs=4
+             ;;
+      *)
+       empHrs=0
+             ;;
+esac
+salary=$(($empHrs*$empRatePerHr));
