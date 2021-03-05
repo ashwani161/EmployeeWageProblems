@@ -1,7 +1,8 @@
 #factorial
 #!/bin/bash -x
 
-read -p "Enter a number: " num
+echo "Enter a number:"
+read num
 fact=1
 
 for((i=2; i<=num; i++))
